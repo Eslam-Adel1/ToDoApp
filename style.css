@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #f44336;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  text-align: center;
+  width: 500px;
+  margin: 20px auto;
+}
+
+@media (max-width: 510px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.add {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.add:hover {
+  background-color: hsl(4, 100%, 61%);
+}
+
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  visibility: hidden;
+}
+
+.task {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  gap: 10px;
+}
+
+.done {
+  opacity: 0.5;
+}
+
+.task:hover {
+  background-color: #f7f7f7;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+p {
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+.del-all {
+  visibility: hidden;
+}
